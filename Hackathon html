@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Activity Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+<h2>Tracker</h2>
+<ul>
+<li>🏠 Home</li>
+<li>📋 Activities</li>
+<li>📊 Progress</li>
+</ul>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+<header>
+<h1>Student Activity Tracker</h1>
+<p>Track your learning progress</p>
+</header>
+
+<section class="dashboard">
+
+<div class="progress-card">
+<h3>Progress</h3>
+
+<div class="circle">
+<span id="percent">0%</span>
+</div>
+
+<p id="summary">0 of 6 activities completed</p>
+
+</div>
+
+</section>
+
+<section class="activities">
+
+<h2>Learning Activities</h2>
+
+<div class="activity-grid">
+
+<div class="card">
+<h3>HTML Basics</h3>
+<p>Learn headings, lists and structure</p>
+<span class="status pending">Pending</span>
+<button onclick="completeTask(this)">Complete</button>
+</div>
+
+<div class="card">
+<h3>CSS Layout</h3>
+<p>Design layout using Flexbox</p>
+<span class="status pending">Pending</span>
+<button onclick="completeTask(this)">Complete</button>
+</div>
+
+<div class="card">
+<h3>JavaScript Basics</h3>
+<p>Understand JS variables and functions</p>
+<span class="status pending">Pending</span>
+<button onclick="completeTask(this)">Complete</button>
+</div>
+
+<div class="card">
+<h3>Responsive Design</h3>
+<p>Make website mobile friendly</p>
+<span class="status pending">Pending</span>
+<button onclick="completeTask(this)">Complete</button>
+</div>
+
+<div class="card">
+<h3>DOM Manipulation</h3>
+<p>Modify webpage dynamically</p>
+<span class="status pending">Pending</span>
+<button onclick="completeTask(this)">Complete</button>
+</div>
+
+<div class="card">
+<h3>Mini Project</h3>
+<p>Create simple web application</p>
+<span class="status pending">Pending</span>
+<button onclick="completeTask(this)">Complete</button>
+</div>
+
+</div>
+
+</section>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
