@@ -1,0 +1,35 @@
+let completed = 0;
+let total = 6;
+
+function completeTask(button){
+
+let card = button.parentElement;
+let status = card.querySelector(".status");
+
+if(status.classList.contains("pending")){
+
+status.innerText = "Completed";
+status.classList.remove("pending");
+status.classList.add("completed");
+
+completed++;
+
+updateProgress();
+
+}
+
+}
+
+function updateProgress(){
+
+let percent = Math.round((completed/total)*100);
+
+document.getElementById("percent").innerText = percent + "%";
+
+document.querySelector(".circle").style.background =
+"conic-gradient(#4a6cf7 "+percent+"%, #ddd "+percent+"%)";
+
+document.getElementById("summary").innerText =
+completed + " of " + total + " activities completed";
+
+}
