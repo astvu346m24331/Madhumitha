@@ -1,0 +1,116 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6fb;
+}
+
+.container{
+display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:200px;
+background:#2c3e50;
+color:white;
+height:100vh;
+padding:20px;
+}
+
+.sidebar h2{
+text-align:center;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+padding:12px;
+margin:10px 0;
+background:#34495e;
+border-radius:6px;
+}
+
+/* Main */
+
+.main{
+flex:1;
+padding:30px;
+}
+
+header{
+margin-bottom:20px;
+}
+
+/* Progress Card */
+
+.progress-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:250px;
+text-align:center;
+}
+
+.circle{
+width:120px;
+height:120px;
+border-radius:50%;
+background:conic-gradient(#4a6cf7 0%, #ddd 0%);
+display:flex;
+align-items:center;
+justify-content:center;
+margin:15px auto;
+font-size:20px;
+font-weight:bold;
+}
+
+/* Activity Grid */
+
+.activities{
+margin-top:40px;
+}
+
+.activity-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.status{
+display:block;
+margin:10px 0;
+font-weight:bold;
+}
+
+.pending{
+color:red;
+}
+
+.completed{
+color:green;
+}
+
+button{
+background:#4a6cf7;
+border:none;
+color:white;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#324fc7;
+}
